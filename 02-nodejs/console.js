@@ -35,8 +35,9 @@ var menu = function() {
                     case "4":
                         rl.question("Entrez l'identifiant de la session voulue : ", function(id) {
                             var session = service.trouverUneSession(id) ;
+                            //console.log(session);
                             if (session != null) {
-                                console.log(session[0].desc + "\nPrésentateur(s) : " + session[0].speakers);
+                                console.log(session.desc + "\nPrésentateur(s) : " + session.speakers);
                             } else {
                                 console.log("Il n'y a pas de session avec l'identifiant " + id);
                             }
