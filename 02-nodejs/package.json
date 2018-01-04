@@ -1,0 +1,23 @@
+{
+  "name": "02-nodejs",
+  "version": "1.0.0",
+  "description": "TP2 Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo test",
+    "run": "node console.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tagpower/formation-frontend.git"
+  },
+  "keywords": [
+    "dta"
+  ],
+  "author": "Clément",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tagpower/formation-frontend/issues"
+  },
+  "homepage": "https://github.com/Tagpower/formation-frontend#readme"
+}
