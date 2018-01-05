@@ -16,7 +16,7 @@ var menu = function() {
               + "4) Détails d'une session\n",
             function(answer) {
 
-                switch(answer) {
+                switch(answer.trim()) {
                     case "1":
                         service.listerTousLesPresentateurs().forEach(function(prez) {
                             console.log(prez.firstname + ' ' + prez.lastname);
@@ -34,9 +34,9 @@ var menu = function() {
                         break;
                     case "4":
                         rl.question("Entrez l'identifiant de la session voulue : ", function(id) {
-                            var session = service.trouverUneSession(id) ;
+                            var session = service.trouverUneSession(id.trim()) ;
                             //console.log(session);
-                            if (session != null) {
+                            if (!session) {
                                 console.log(session.desc + "\nPrésentateur(s) : " + session.speakers);
                             } else {
                                 console.log("Il n'y a pas de session avec l'identifiant " + id);

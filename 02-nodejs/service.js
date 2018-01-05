@@ -9,8 +9,7 @@ function listerToutesLesSessions() {
 }
 
 function trouverUneSession(idSession) {
-    var index = devfest.sessions.findIndex(s => s.id == idSession);
-    return devfest.sessions[index];
+    return devfest.sessions.find(s => s.id == idSession);
 }
 
 function listerTopPresentateurs() {
